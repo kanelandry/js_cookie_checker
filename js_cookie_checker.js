@@ -50,7 +50,7 @@ function do_syscookies_exist()
 	//-finally, take proper action related to the existence of the system cookie(s)
 	if(redirectStatus == true) {
 		delete_cookie("systemcookie1"); delete_cookie("systemcookie2"); //-To cover the case where only one was inexistant
-		window.location.replace("index.php?ern=2&next="+encodeURIComponent(document.URL)+""); 
+		window.location.replace("login.php?error=2&next="+encodeURIComponent(document.URL)+""); 
 	}
 }
 
